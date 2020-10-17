@@ -1,7 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Pie } from 'react-chartjs-2';
+import axios from 'axios';
+
 
 
 function HomePage() {
+    axios.get('http://localhost:4000/budget');
+  const [chartData, setChartData] = useState({})
+
+  const chart = () => {
+    setChartData({
+    datasets: [
+        {
+            data: [30, 350, 90, 40, 50, 45, 250],
+            
+            backgroundColor: [
+                '#ffcd56',
+                '#ff6384',
+                '#36a2eb',
+                '#fd6b19',
+                '#900C3F',
+                '#3341FF',
+                '#FF33FB'
+                
+               
+            ],
+        }
+    ],
+    labels: [
+        'Eat Out',
+        'Rent',
+        'Groceries',
+        'Gas',
+        'Subscriptions',
+        'Phone',
+        'Insurance'
+
+    ]
+    
+
+  })
+}
+  
+  useEffect(() => {
+    chart()
+  }, [])
   return (
     <div className="container center">
 
@@ -38,6 +81,12 @@ function HomePage() {
                 This app is free!!! And you are the only one holding your data!
             </p>
         </div>
+        <div className="text-box-chart">
+                <h1>Chart</h1>
+                <p>
+                <Pie data={chartData} options={{responsive: true}}/>
+                </p>
+            </div>
 </div>
 
 </div>
