@@ -4,7 +4,7 @@ import React from 'react';
 function LoginPage() {
   return (
     <div>
-      LoginPage
+      Login page
     </div>
   );
 }
