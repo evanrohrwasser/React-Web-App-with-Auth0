@@ -23,9 +23,7 @@ import Signup from './LoginPage/Signup';
 import Dashboard from './Dashboard/Dashboard';
 import Inputs from './Dashboard/Inputs';
 
-// getChartData = () => {
 
-// }
 
 function App() {
 

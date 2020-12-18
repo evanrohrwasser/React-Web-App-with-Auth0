@@ -9,7 +9,7 @@ const LoginPage = () => {
     
     !isAuthenticated && (
      
-   <button aria-label="Login Button" onClick={() => loginWithRedirect()}>
+   <button onClick={() => loginWithRedirect()}>
      
      Log In
    </button>

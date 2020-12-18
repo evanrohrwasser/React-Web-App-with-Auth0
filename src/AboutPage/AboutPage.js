@@ -9,18 +9,6 @@ function AboutPage() {
         <p>Our Personal Budget application is a way for people
         to easily track, monitor and visualize <br /> how much they are spending
         on a month to month basis. Best of all it's free!
-        <br>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </br>
         </p>
         </div> 
         

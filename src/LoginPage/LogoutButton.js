@@ -5,7 +5,7 @@ const LogoutButton = () => {
   const { logout, isAuthenticated } = useAuth0();
   return(
       isAuthenticated && (
-   <button aria-label="Logout Button" onClick={() => logout()}>
+   <button onClick={() => logout()}>
      Log Out
    </button>
       )
