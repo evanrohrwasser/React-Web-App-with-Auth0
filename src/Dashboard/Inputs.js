@@ -58,9 +58,10 @@ export default class Inputs extends Component {
                 <h1>Enter your expense here</h1>
                 <form submitBtn={this.submitBtn}>
                     <div className="form">
-                        <label>Item: </label>
+                        <label for="Item">Item: </label>
                         <input type="text"
                         required
+                        id="Item"
                         className="form-edit"
                         placeholder= "Enter an Item"
                         value={this.state.item}
@@ -68,9 +69,10 @@ export default class Inputs extends Component {
                         />
                     </div>
                     <div className="form">
-                        <label>Amount: </label>
+                        <label for ="Amount">Amount: </label>
                         <input type="text"
                         required
+                        id="Amount"
                         className="form-edit"
                         placeholder= "Enter the dollar amount"
                         value={this.state.amount}
@@ -78,7 +80,7 @@ export default class Inputs extends Component {
                         />
                     </div>
                     <div className="form">
-                        <input type="submit" value="Create expense" className="btn"></input>
+                        <input type="submit" aria-label="Submit or create expense button " value="Create expense" className="btn"></input>
 
                     </div>
                 </form>

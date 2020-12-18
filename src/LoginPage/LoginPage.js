@@ -9,7 +9,7 @@ const LoginPage = () => {
     
     !isAuthenticated && (
      
-   <button onClick={() => loginWithRedirect()}>
+   <button aria-label="Login Button" aria-hidden="false" onClick={() => loginWithRedirect()}>
      
      Log In
    </button>

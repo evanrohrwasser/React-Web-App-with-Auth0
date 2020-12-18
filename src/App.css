@@ -72,5 +72,9 @@ button{
 
 
 footer{
-  margin-bottom: -50px;
+  
+   position: relative;;
+   bottom:0;
+   width:100%;
+  
 }
