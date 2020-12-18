@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer> 
       
-    <div className="bottom">
+    <div className="bottom" aria-label="footer">
         <div className="center">
             All rights reserved &copy; Evan Rohrwasser
         </div>

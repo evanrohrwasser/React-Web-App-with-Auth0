@@ -23,12 +23,15 @@ import Signup from './LoginPage/Signup';
 import Dashboard from './Dashboard/Dashboard';
 import Inputs from './Dashboard/Inputs';
 
+// getChartData = () => {
+
+// }
 
 function App() {
 
   const {isLoading } = useAuth0();
 
-  if (isLoading) return <div>Loading...</div>
+  if (isLoading) return <div className="loading">Loading...</div>
 
   return (
     <Router>

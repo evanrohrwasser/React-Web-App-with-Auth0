@@ -7,7 +7,7 @@ import {
 function Menu() {
   return (
 
-    <div className="menu" id = "nav" itemScope>
+    <div className="menu" aria-label="Navigation bar" id = "nav" itemScope>
     <ul>
         <li><Link itemProp="url" to = "/">Home</Link></li>
         <li><Link itemProp="url" to = "/dashboard">Dashboard</Link></li>
