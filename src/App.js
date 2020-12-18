@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,8 +15,21 @@ import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
+import LogoutButton from './LoginPage/LogoutButton';
+import Profile from './LoginPage/Profile';
+import Login from './LoginPage/Login'
+import { useAuth0 } from '@auth0/auth0-react';
+import Signup from './LoginPage/Signup';
+import Dashboard from './Dashboard/Dashboard';
+import Inputs from './Dashboard/Inputs';
+
 
 function App() {
+
+  const {isLoading } = useAuth0();
+
+  if (isLoading) return <div>Loading...</div>
+
   return (
     <Router>
       <Menu/>
@@ -26,7 +40,15 @@ function App() {
             <AboutPage/>
           </Route>
           <Route path="/login">
+            <Login/>
             <LoginPage/>
+            <Signup/>
+            <LogoutButton/>
+            <Profile />
+          </Route>
+          <Route path="/dashboard">
+          <Inputs/>
+            <Dashboard/>
           </Route>
           <Route path="/">
             <HomePage/>

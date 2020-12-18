@@ -1,54 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { Pie } from 'react-chartjs-2';
-import axios from 'axios';
+import React from 'react';
 
 
 
 function HomePage() {
-    axios.get('http://localhost:4000/budget');
-  const [chartData, setChartData] = useState({})
-
-  const chart = () => {
-    setChartData({
-    datasets: [
-        {
-            data: [30, 350, 90, 40, 50, 45, 250],
-            
-            backgroundColor: [
-                '#ffcd56',
-                '#ff6384',
-                '#36a2eb',
-                '#fd6b19',
-                '#900C3F',
-                '#3341FF',
-                '#FF33FB'
-                
-               
-            ],
-        }
-    ],
-    labels: [
-        'Eat Out',
-        'Rent',
-        'Groceries',
-        'Gas',
-        'Subscriptions',
-        'Phone',
-        'Insurance'
-
-    ]
     
-
-  })
-}
-  
-  useEffect(() => {
-    chart()
-  }, [])
   return (
+
     <div className="container center">
 
     <div className="page-area">
+        <div classname="home-header">
+            <h1>What is a Personal Budget application?</h1>
+            <h2>An easier way to track what you are spending.</h2>
+            <h2>Enter how much you spend each month and we will do the rest!</h2>
+        </div>
 
         <div className="text-box">
             <h1>Stay on track</h1>
@@ -81,12 +46,8 @@ function HomePage() {
                 This app is free!!! And you are the only one holding your data!
             </p>
         </div>
-        <div className="text-box-chart">
-                <h1>Chart</h1>
-                <p>
-                <Pie data={chartData} options={{responsive: true}}/>
-                </p>
-            </div>
+       
+        
 </div>
 
 </div>

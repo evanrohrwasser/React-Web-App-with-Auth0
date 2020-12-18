@@ -371,6 +371,7 @@ div.menu {
   background-color: #4d5791;
   height: 44px;
   padding: 0 40px;
+  font-weight:800;
 }
 
 div.menu ul,
@@ -436,10 +437,45 @@ div.hero h2 {
   height: 50px;
   background-color: #b4c6f0;
   padding: 40px;
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .center {
   text-align: center;
+  padding: 0px;
+  
+}
+
+.container h1{
+  text-align: center;
+  color: #4d5791;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.container h2{
+  text-align: center;
+  color:   #4d5791;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-bottom: -20px;
+}
+
+.container p{
+  text-align: center;
+  color:   #0b1130;
+  font-size: small;
+  font-weight: bolder;
+  
+}
+
+.container h3{
+  text-align: center;
+  color:  #87a0db;
+  font-weight: bolder;
+  padding-bottom: -20px;
 }
 
 .container div.text-box {
@@ -454,6 +490,83 @@ div.hero h2 {
   .container .div.text-box {
       margin: 10px;
   }
+}
+
+.form{
+  display: block;
+    text-align: center;
+}
+
+.form-edit{
+  color:#4d5791;
+  text-align: center;
+  font-weight: bold;
+}
+
+label{
+
+  color: #4d5791;
+  font-size: large;
+  font-weight: bold;
+  margin:auto auto;
+  margin-bottom: 40px;
+  
+}
+
+input{
+  width: 30%;
+  margin-bottom: 40px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #90abe9;
+  display: flex;
+  vertical-align:middle;
+  flex-wrap: wrap;
+  margin: auto auto;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+a:link{
+  text-decoration: none;
+  color: #4d5791;
+}
+
+.btn{
+  background-color: #4d5791; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  text-align: center;
+  margin: auto;
+  display: flex;
+  display: grid;
+  padding: 1rem 2rem;
+  width: 200px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:800;
+  border-radius: 6px;
+}
+
+.Login-header{
+  color:  #4d5791;
+  font-size: 90px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  display: grid;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 /*css to hide skip to content link and show off screen */
 .skip-to-content-link {

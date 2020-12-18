@@ -1,7 +1,8 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const LoginPage = () => {
+
+const Signup = () => {
   
   const { loginWithRedirect, isAuthenticated } = useAuth0();
   
@@ -11,7 +12,7 @@ const LoginPage = () => {
      
    <button onClick={() => loginWithRedirect()}>
      
-     Log In
+     Sign up
    </button>
    
     )
@@ -19,4 +20,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage;
+export default Signup;
