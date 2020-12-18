@@ -3,6 +3,7 @@ import React from 'react';
 
 function Login() {
   return (
+    <div className="box">
     <h1 >
     <div className="Login-header">
       
@@ -10,6 +11,7 @@ function Login() {
         
     </div>
     </h1>
+    </div>
   );
 }
 
