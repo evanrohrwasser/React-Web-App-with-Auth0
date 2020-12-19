@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Redirect } from 'react-router-dom';
 
+
 export default class Inputs extends Component {
     constructor(props) {
         super(props);
@@ -8,6 +9,7 @@ export default class Inputs extends Component {
         this.submit = this.submit.bind(this);
         this.changeAmount = this.changeAmount.bind(this);
         this.changeItem = this.changeItem.bind(this);
+
       
 
         this.state ={
@@ -43,7 +45,7 @@ export default class Inputs extends Component {
 
             console.log(expense)
 
-            window.location = './Dashboard.js'
+            window.location.assign = 'https://er-4166-fp.netlify.app/'
     }
 
     render (){
@@ -79,12 +81,14 @@ export default class Inputs extends Component {
                         />
                     </div>
                     <div className="form">
-                        <input type="submit" aria-label="Submit or create expense button " value="Create expense" className="btn" onClick={() => Redirect()}></input>
-
+                      
+                        <input type="submit" aria-label="Submit or create expense button " value="Create expense" className="btn"/>
+                      
                     </div>
                 </form>
             </div>
         )
+        
     }
 
 }

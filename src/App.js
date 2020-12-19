@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +25,7 @@ import Inputs from './Dashboard/Inputs';
 
 
 function App() {
+
 
   const {isLoading } = useAuth0();
 
