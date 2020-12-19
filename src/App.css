@@ -38,12 +38,12 @@
 }
 
 h1{
-  color: #4d5791;
+  color: #451055;
   position: center;
 }
 
 button{
-  background-color: #90abe9; 
+  background-color:  #6a2380; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -63,7 +63,7 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   font-weight:900;
   border-radius: 6px;
-  border: 3px solid  #4d5791;
+  border: 3px solid #7edbdb;
   
   
   

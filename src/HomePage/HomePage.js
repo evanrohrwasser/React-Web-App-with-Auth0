@@ -24,10 +24,10 @@ function HomePage() {
             </p>
         </div>
 
-        <div className="text-box" aria-label="Alerts">
-            <h1>Alerts</h1>
+        <div className="text-box" aria-label="Visualize">
+            <h1>Visualize</h1>
             <p>
-                What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+            This app helps visualize how much you are spending in each category.
             </p>
         </div>
 

@@ -368,7 +368,7 @@ body {
 
 div.menu {
   width: 100%;
-  background-color: #4d5791;
+  background-color: #105055;
   height: 44px;
   padding: 0 40px;
   font-weight:800;
@@ -394,14 +394,14 @@ div.menu ul li a {
 
 div.menu ul li a:hover  {
   background-color: white;
-  color: #4d5791;
+  color: #451055;
 }
 
 div.hero {
   height: 350px;
-  background-color: #b4c6f0;
+  background-color: #7edbdb;
   background-image: url('/bg.png');
-  background-size: 400px;
+  background-size: 300px;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-top: 40px;
@@ -420,7 +420,7 @@ div.hero h1 {
 }
 
 div.hero h2 {
-  color: #4d5791;
+  color:#451055;
 }
 
 .container {
@@ -440,13 +440,13 @@ margin-top: 10px;
 padding:15px;
 margin-bottom: 20px;
 background:white;
-border:4px solid #4d5791;
+border:4px solid#451055;
 border-radius: 20px;
 }
 
 .bottom {
   height: 50px;
-  background-color: #b4c6f0;
+  background-color: #7edbdb;
   padding: 40px;
   min-height: 100%;
   position: relative;
@@ -466,7 +466,7 @@ border-radius: 20px;
 
 .container h1{
   text-align: center;
-  color: #4d5791;
+  color: #451055;
   font-size: xx-large;
   font-weight: bolder;
   padding-bottom: 20px;
@@ -474,7 +474,7 @@ border-radius: 20px;
 
 .container h2{
   text-align: center;
-  color:   #4d5791;
+  color:  #722988;
   font-size: x-large;
   font-weight: bolder;
   padding-bottom: -20px;
@@ -483,7 +483,7 @@ border-radius: 20px;
 
 .container p{
   text-align: center;
-  color:   #0b1130;
+  color:   #542c81;
   font-size: small;
   font-weight: bolder;
   
@@ -491,7 +491,7 @@ border-radius: 20px;
 
 .container h3{
   text-align: center;
-  color:  #87a0db;
+  color:  #7edbdb;
   font-weight: bolder;
   padding-bottom: -20px;
 }
@@ -517,14 +517,14 @@ border-radius: 20px;
 }
 
 .form-edit{
-  color:#4d5791;
+  color:#451055;
   text-align: center;
   font-weight: bold;
 }
 
 label{
 
-  color: #4d5791;
+  color:#451055;
   font-size: large;
   font-weight: bold;
   margin:auto auto;
@@ -536,7 +536,7 @@ input{
   margin-bottom: 40px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 3px solid #90abe9;
+  border: 3px solid  #7edbdb;
   display: flex;
   vertical-align:middle;
   flex-wrap: wrap;
@@ -548,11 +548,11 @@ input{
 
 a:link{
   text-decoration: none;
-  color: #4d5791;
+  color: #451055;
 }
 
 .btn{
-  background-color: #4d5791; 
+  background-color: #451055; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -576,7 +576,7 @@ a:link{
 }
 
 .Login-header{
-  color:  #4d5791;
+  color:   #2a6e80;
   font-size: 90px;
   text-align: center;
   margin: auto;
