@@ -42,7 +42,7 @@ export default class Inputs extends Component {
 
             console.log(expense)
 
-            window.location = '/'
+            window.location = 'https://er-4166-fp.netlify.app/dashboard'
     }
 
     render (){
