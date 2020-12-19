@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Redirect } from 'react-router-dom';
 
 export default class Inputs extends Component {
     constructor(props) {
@@ -42,7 +43,7 @@ export default class Inputs extends Component {
 
             console.log(expense)
 
-            window.location = 'https://er-4166-fp.netlify.app/dashboard'
+            window.location = './Dashboard.js'
     }
 
     render (){
@@ -78,7 +79,7 @@ export default class Inputs extends Component {
                         />
                     </div>
                     <div className="form">
-                        <input type="submit" aria-label="Submit or create expense button " value="Create expense" className="btn"></input>
+                        <input type="submit" aria-label="Submit or create expense button " value="Create expense" className="btn" onClick={() => Redirect()}></input>
 
                     </div>
                 </form>
