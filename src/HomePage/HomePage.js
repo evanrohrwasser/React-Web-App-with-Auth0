@@ -9,7 +9,7 @@ function HomePage() {
     <div className="container center">
 
     <div className="page-area">
-        <div classname="home-header" aria-label="Introduction">
+        <div className="home-header" aria-label="Introduction">
             <h1>What is a Personal Budget application?</h1>
             <h2>An easier way to track what you are spending.</h2>
             <h2>Enter how much you spend each month and we will do the rest!</h2>

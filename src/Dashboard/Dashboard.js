@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Doughnut, Pie, Polar, } from 'react-chartjs-2';
-import axios from 'axios';
+import { Bar, Doughnut, Pie, } from 'react-chartjs-2';
+
 
 
 
 function Dashboard() {
-    axios.get('http://localhost:4000/budget');
+    
   const [chartData, setChartData] = useState({})
 
   const chart = () => {
@@ -50,19 +50,19 @@ function Dashboard() {
     <div className="dash header">
        
         </div> 
-        <div className="pie-chart">
+        <div className="pie-chart" aria-label="pie chart">
                 <h2>Pie Chart</h2>
                 <p>
                 <Pie data={chartData} options={{responsive: true}}/>
                 </p>
             </div>
-            <div className="bar-chart">
-                <h2>Polar Area Chart</h2>
+            <div className="bar-chart" aria-label="Bar Chart">
+                <h2>Bar Chart</h2>
                 <p>
-                <Polar  data={chartData}  options={{responsive: true}}/>
+                <Bar  data={chartData}  options={{responsive: true}}/>
                 </p>
             </div>
-            <div className="doughnut-chart">
+            <div className="doughnut-chart" aria-label="Doughnut Chart">
                 <h2>Doughnut Chart</h2>
                 <p>
                 <Doughnut data={chartData} options={{responsive: true}}/>

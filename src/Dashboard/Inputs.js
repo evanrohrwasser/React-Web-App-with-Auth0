@@ -3,10 +3,8 @@ import React, {Component} from 'react';
 export default class Inputs extends Component {
     constructor(props) {
         super(props);
-        console.log("this is the constructor")
-
         this.onChange = this.onChange.bind(this);
-        this.submitBtn = this.submitBtn.bind(this);
+        this.submit = this.submit.bind(this);
         this.changeAmount = this.changeAmount.bind(this);
         this.changeItem = this.changeItem.bind(this);
       
@@ -18,14 +16,13 @@ export default class Inputs extends Component {
     }
 
     onChange(e) {
-        console.log("onChange function")
         this.setState({
             [e.target.name]: e.target.value
         })
     }
 
     changeItem(e) {
-        console.log("changeItem function")
+        
         this.setState({
             item: e.target.value
         });
@@ -37,8 +34,7 @@ export default class Inputs extends Component {
         });
     }
 
-    submitBtn(e) {
-        console.log("submitBtn function")
+    submit(e) {
             const expense = {
                 item: this.state.item,
                 amount: this.state.amount,
@@ -56,11 +52,12 @@ export default class Inputs extends Component {
                  <h1>Welcome to your Personal Budget Dashboard!</h1>
                  <h2>This is where you will be able to enter your personal data about your spending habits</h2>
                 <h1>Enter your expense here</h1>
-                <form submitBtn={this.submitBtn}>
+                <form>
                     <div className="form">
                         <label for="Item">Item: </label>
                         <input type="text"
                         required
+                        aria-label="Input for Item"
                         id="Item"
                         className="form-edit"
                         placeholder= "Enter an Item"
@@ -72,6 +69,7 @@ export default class Inputs extends Component {
                         <label for ="Amount">Amount: </label>
                         <input type="text"
                         required
+                        aria-label="Input for dollar amount"
                         id="Amount"
                         className="form-edit"
                         placeholder= "Enter the dollar amount"
