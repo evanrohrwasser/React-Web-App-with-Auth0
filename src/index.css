@@ -478,6 +478,7 @@ border-radius: 20px;
   font-size: x-large;
   font-weight: bolder;
   padding-bottom: -20px;
+  
 }
 
 .container p{
@@ -501,6 +502,7 @@ border-radius: 20px;
   max-width: 340px;
   text-align: justify;
   margin: 20px;
+  vertical-align: auto;
 }
 
 @media screen and (min-width: 768px) {
